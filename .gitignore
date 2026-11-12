@@ -1,0 +1,39 @@
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Node Dependencies and Build Outputs
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.turbo/
+.npm/
+*.tsbuildinfo
+
+# Python Caches & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.pytest_cache/
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS System Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local Backups
+.cleanup_backup/

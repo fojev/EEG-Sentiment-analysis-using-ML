@@ -1,0 +1,131 @@
+{
+  "suite": "EEG Sentiment Analysis Drone.io Light Design System & ML Pipeline QA",
+  "timestamp": "2026-11-12T02:06:38.540Z",
+  "tests": [
+    {
+      "id": "DASH-MINIMAL-01",
+      "name": "Radical Dashboard Simplification (Heading, Description, Start Analysis Button Only)",
+      "status": "PASS",
+      "details": {
+        "hero": "EEG Sentiment Analysis",
+        "description": "Classify EEG feature data into Positive, Neutral, or Negative sentiment.",
+        "button": "Start Analysis",
+        "hasUnwantedMetrics": false,
+        "hasTopHeaderRemoved": true,
+        "hasSidebarBottomRemoved": true
+      }
+    },
+    {
+      "id": "SIDEBAR-MIN-01",
+      "name": "Sidebar Minimization & Dynamic Margin Adjustment",
+      "status": "PASS",
+      "details": {
+        "collapsed": true,
+        "expanded": true
+      }
+    },
+    {
+      "id": "RESPONSIVE-LIGHT-01",
+      "name": "Responsive Viewport Integrity (1366px, 1024px, 768px, 390px)",
+      "status": "PASS",
+      "details": "All viewports rendered cleanly without overflow or clipped cards"
+    },
+    {
+      "id": "NAV-ANALYSIS-LIGHT-01",
+      "name": "Navigation & Light Theme Upload Workspace Initialization",
+      "status": "PASS",
+      "details": {
+        "header": "EEG Sentiment Analysis",
+        "hasStepper": true,
+        "hasDropzone": true
+      }
+    },
+    {
+      "id": "ERR-HANDLING-LIGHT-01",
+      "name": "Invalid Dataset Error Alert Presentation in Light Theme",
+      "status": "PASS",
+      "details": {
+        "errorAlertText": "Dataset feature count mismatch: found 2 features, but the Random Forest model requires exactly 2,548 EEG features."
+      }
+    },
+    {
+      "id": "PREVIEW-ACCURACY-LIGHT-01",
+      "name": "Valid CSV Metadata Preview & 5-Row Dataset Table Preview",
+      "status": "PASS",
+      "details": {
+        "hasFilename": true,
+        "hasValidBadge": true,
+        "hasExact20Records": true,
+        "has2548Features": true,
+        "hasPreviewTable": true
+      }
+    },
+    {
+      "id": "PREDICTION-RESULTS-LIGHT-01",
+      "name": "Drone.io Light Prediction Results, Cyan Donut Chart & Export CSV",
+      "status": "PASS",
+      "details": {
+        "totalRecords": 20,
+        "sumPercentage": "100.0%",
+        "positive": {
+          "pct": 30,
+          "count": 6
+        },
+        "neutral": {
+          "pct": 35,
+          "count": 7
+        },
+        "negative": {
+          "pct": 35,
+          "count": 7
+        },
+        "hasSummarySentence": true,
+        "hasExportBtn": true,
+        "tableRowsRendered": 15
+      }
+    },
+    {
+      "id": "RESET-WORKFLOW-LIGHT-01",
+      "name": "Application State Reset & Return to Step 1",
+      "status": "PASS",
+      "details": {
+        "isReset": true
+      }
+    }
+  ],
+  "consoleLogs": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    }
+  ],
+  "networkErrors": [],
+  "modelResults": {
+    "hasHeader": true,
+    "hasDonutSvg": true,
+    "hasPredictionsTable": true,
+    "tableRowsCount": 15,
+    "hasSummarySentence": true,
+    "hasExportBtn": true,
+    "positive": {
+      "pct": 30,
+      "count": 6
+    },
+    "neutral": {
+      "pct": 35,
+      "count": 7
+    },
+    "negative": {
+      "pct": 35,
+      "count": 7
+    }
+  }
+}
